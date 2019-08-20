@@ -5,12 +5,13 @@ workflows:
   build:
     jobs:
       - cypress/run:
+          working_directory: tests
           no-workspace: true
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=dev --browser chrome
           post-steps:
             - run: node cypress/support/reporter.js
             - store_test_results:
-                path: cypress/results/cucumber-json
+                path: tests/cypress/results/cucumber-json/
             - store_artifacts:
-                path: /cypress/results/
+                path: tests/cypress/results/
