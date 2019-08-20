@@ -13,4 +13,4 @@ workflows:
             - store_test_results:
                 path: cypress/results/index.html
             - store_artifacts:
-                path: /tmp/cypress/results
+                path: /cypress/results
