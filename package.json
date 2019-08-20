@@ -1,0 +1,19 @@
+{
+  "name": "trainsmart_cypres_testautomation",
+  "version": "1.0.0",
+  "description": "Test automation framework based on Cypress and Cucumber ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sukamilan@gmail.com",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.13.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

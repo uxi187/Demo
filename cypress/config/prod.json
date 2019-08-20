@@ -1,0 +1,7 @@
+{
+    "chromeWebSecurity": false,
+    "baseUrl": "https://webapp.prod.trainsmart.com",
+    "env": {
+        "b": "b"
+    }
+}
