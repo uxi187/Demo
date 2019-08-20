@@ -6,4 +6,4 @@ workflows:
     jobs:
       - cypress/run:
           executor: cypress/browsers-chrome69
-          browser: chrome
+          command: npx cypress-tags run -e TAGS='@idmngmt' --env configFile=dev --browser chrome
