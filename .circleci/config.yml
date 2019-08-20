@@ -11,6 +11,6 @@ workflows:
           post-steps:
             - run: node cypress/support/reporter.js
             - store_test_results:
-                path: cypress/results/index.html
+                path: cypress/results/cucumber-json
             - store_artifacts:
-                path: /cypress/results
+                path: /cypress/results/
