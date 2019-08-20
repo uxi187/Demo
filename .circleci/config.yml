@@ -6,7 +6,7 @@ workflows:
     jobs:
       - cypress/run:
           executor: cypress/browsers-chrome69
-          command: npx cypress-tags run -e TAGS='@idmngmt' --env configFile=dev --browser chrome
+          command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=dev --browser chrome
           post-steps:
             - store_test_results:
                 path: cypress/results
