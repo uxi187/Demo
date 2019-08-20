@@ -11,6 +11,6 @@ workflows:
           post-steps:
             - run: node cypress/support/reporter.js
             - store_test_results:
-                path: cypress/results/
+                path: results
             - store_artifacts:
-                path: cypress/results/*
+                path: output
