@@ -1,15 +1,17 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+jobs:
+  generateReport:
+    steps:
+      - run: node cypress/support/reporter.js
 workflows:
   build:
     jobs:
       - cypress/run:
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=dev --browser chrome
-      - run:
-          name: Generate report
-          command: node cypress/support/reporter.js
+      - generateReport
           post-steps:
             - store_test_results:
                 path: cypress/results/index.html
