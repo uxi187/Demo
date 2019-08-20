@@ -1,0 +1,899 @@
+[
+  {
+    "description": "\tI want to verify Forgotten password functionality",
+    "keyword": "Feature",
+    "name": "Add Workout",
+    "line": 2,
+    "id": "add-workout",
+    "tags": [
+      {
+        "name": "@aw",
+        "line": 1
+      }
+    ],
+    "uri": "AddWorkout.feature",
+    "elements": [
+      {
+        "id": "add-workout;aw001-check-add-workout-page-redirection",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "AW001 Check Add Workout page redirection",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 4100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click on \"Back\" button",
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user is navigated to \"#/workout/new\" page",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click on \"Add session\" button",
+            "result": {
+              "status": "passed",
+              "duration": 235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user is navigated to \"#/workout/manual\" page",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw001-check-add-workout-page-redirection",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "AW001 Check Add Workout page redirection",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1351000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click on \"Back\" button",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user is navigated to \"#/workout/new\" page",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click on \"Manage apps and devices\" button",
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user is navigated to \"#/setting/apps\" page",
+            "result": {
+              "status": "failed",
+              "duration": 4001000000,
+              "error_message": "CypressError: Timed out retrying: expected 'https://webapp.prod.trainsmart.com/#/home' to include '#/setting/apps'\n    at Object.cypressErr (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:85348:11)\n    at Object.throwErr (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:85303:18)\n    at Object.throwErrByPath (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:85335:17)\n    at retry (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:77321:16)\n    at onFailFn (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:68422:16)\n    at tryCatcher (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromise0 (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:117000:10)\n    at Promise._settlePromises (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:117075:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:113687:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (https://webapp.prod.trainsmart.com/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>"
+            },
+            "embeddings": [
+              {
+                "data": "VGltZWQgb3V0IHJldHJ5aW5nOiBleHBlY3RlZCAnaHR0cHM6Ly93ZWJhcHAucHJvZC50cmFpbnNtYXJ0LmNvbS8jL2hvbWUnIHRvIGluY2x1ZGUgJyMvc2V0dGluZy9hcHBzJw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw002-add-workout-page-content-is-correct",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "AW002 Add Workout page content is correct",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Date field should have todays date",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Time field should have todays time",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "fields"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Session name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duration"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Distance"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 23,
+            "name": "input fields are visible",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Mode dropdown is not accesible",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user select Activity \"Cycling\"",
+            "result": {
+              "status": "passed",
+              "duration": 569000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Mode dropdown is accesible",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1458000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Aquabike\"",
+            "result": {
+              "status": "passed",
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Aquathlon\"",
+            "result": {
+              "status": "passed",
+              "duration": 526000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Duathlon\"",
+            "result": {
+              "status": "passed",
+              "duration": 568000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1195000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Swimming\"",
+            "result": {
+              "status": "passed",
+              "duration": 553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Triathlon\"",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Weights\"",
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 985000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Cycling\"",
+            "result": {
+              "status": "passed",
+              "duration": 554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"Speed\", \"\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw003-validate-add-parameter-for-system-sports",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "AW003 Validate Add parameter for system sports",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user select Activity \"Running\"",
+            "result": {
+              "status": "passed",
+              "duration": 695000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "add parameters \"Heart rate\", \"Calories\", \"Pace\", \"Incline\" will be shown",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw004-user-can-add/remove-additional-sport",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "AW004 User can add/remove additional sport",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "user is on Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 1429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "user select Add sport button",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "label"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Activity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duration"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Distance"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Intensity"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Time in zone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Add parameter"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "adding new sport form is visible with additional fields",
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "user select Remove sport button",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "adding new sport form is not visible",
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "add-workout;aw005-intensity-zones-based-on-heart-rate-zone-3-model",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "AW005 Intensity zones based on Heart rate zone 3 model",
+        "tags": [
+          {
+            "name": "@aw",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "user set Heart rate zones to Zone level \"3\"",
+            "result": {
+              "status": "passed",
+              "duration": 987000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "user navigate to Add workout page",
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "enter 1h for duration time",
+            "result": {
+              "status": "passed",
+              "duration": 753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "intensity slider is moved to \"<position>\"",
+            "result": {
+              "status": "failed",
+              "duration": 38000000,
+              "error_message": "Uncaught TypeError: Cannot read property 'document' of undefined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at _t (https://webapp.prod.trainsmart.com/app.js:4836:10285)\n    at HTMLAnchorElement.e (https://webapp.prod.trainsmart.com/app.js:4836:178903)\n    at HTMLAnchorElement.<anonymous> (https://webapp.prod.trainsmart.com/app.js:4836:8198)"
+            },
+            "embeddings": [
+              {
+                "data": "Q2Fubm90IHJlYWQgcHJvcGVydHkgJ2RvY3VtZW50JyBvZiB1bmRlZmluZWQKClRoaXMgZXJyb3Igb3JpZ2luYXRlZCBmcm9tIHlvdXIgYXBwbGljYXRpb24gY29kZSwgbm90IGZyb20gQ3lwcmVzcy4KCldoZW4gQ3lwcmVzcyBkZXRlY3RzIHVuY2F1Z2h0IGVycm9ycyBvcmlnaW5hdGluZyBmcm9tIHlvdXIgYXBwbGljYXRpb24gaXQgd2lsbCBhdXRvbWF0aWNhbGx5IGZhaWwgdGhlIGN1cnJlbnQgdGVzdC4KClRoaXMgYmVoYXZpb3IgaXMgY29uZmlndXJhYmxlLCBhbmQgeW91IGNhbiBjaG9vc2UgdG8gdHVybiB0aGlzIG9mZiBieSBsaXN0ZW5pbmcgdG8gdGhlICd1bmNhdWdodDpleGNlcHRpb24nIGV2ZW50LgoKaHR0cHM6Ly9vbi5jeXByZXNzLmlvL3VuY2F1Z2h0LWV4Y2VwdGlvbi1mcm9tLWFwcGxpY2F0aW9u",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "position",
+                      "zone1",
+                      "zone2",
+                      "zone3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "100",
+                      "0",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "2",
+                      "100",
+                      "0",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "3",
+                      "100",
+                      "0",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "4",
+                      "100",
+                      "0",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "5",
+                      "85",
+                      "15",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "6",
+                      "60",
+                      "40",
+                      "0"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "7",
+                      "40",
+                      "55",
+                      "5"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "8",
+                      "35",
+                      "45",
+                      "20"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "9",
+                      "15",
+                      "50",
+                      "35"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "10",
+                      "15",
+                      "40",
+                      "45"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "intensity zone persentage is",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

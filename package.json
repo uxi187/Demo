@@ -8,12 +8,20 @@
   },
   "author": "sukamilan@gmail.com",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.12.1"
+  },
   "devDependencies": {
     "cypress": "^3.4.1",
     "cypress-cucumber-preprocessor": "^1.13.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/results/cucumber-json",
+      "filePrefix": "cucumber-",
+      "fileSufix": ""
+    }
   }
 }
