@@ -1,4 +1,4 @@
-@forgotpass
+@idmngmt
 Feature: Forgotten password Trainsmart
 	I want to verify Forgotten password functionality
 	
