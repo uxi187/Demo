@@ -1,6 +1,10 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.8.0
+commands:
+  create-report:
+    steps:
+       - run: node cypress/support/reporter.js
 workflows:
   build:
     jobs:
@@ -8,8 +12,8 @@ workflows:
           no-workspace: true
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
-          post-steps:
-            - run: node cypress/support/reporter.js
+          steps:
+            - create-report 
             - store_artifacts:
                 path: /root/project/cypress/output
             - store_artifacts:
