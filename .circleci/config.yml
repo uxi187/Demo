@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@1.8.0
 workflows:
   build:
     jobs:
@@ -17,4 +17,3 @@ workflows:
             - store_test_results:
                 path: /root/project/cypress/test-results/cucumber-json
                 prefix: test
-                
