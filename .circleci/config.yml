@@ -7,8 +7,7 @@ workflows:
       - cypress/run:
           no-workspace: true
           executor: cypress/browsers-chrome69
-          pre-steps:
-            - run: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
+          commands: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
           post-steps:
             - run: node cypress/support/reporter.js
             - store_artifacts:
