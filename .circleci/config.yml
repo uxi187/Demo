@@ -5,8 +5,8 @@ jobs:
    run-tests:
     executor: cypress/browsers-chrome69
     steps:
-      - cypress/run
-      command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome 
+      - cypress/run:
+        command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome 
 workflows:
   build:
     jobs:
