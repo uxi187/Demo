@@ -13,5 +13,5 @@ jobs:
 workflows:
   build:
     jobs:
-      - run-tests:
-      - run-report:
+      - run-tests
+      - run-report
