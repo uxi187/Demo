@@ -5,12 +5,13 @@ jobs:
   release:
     executor: cypress/browsers-chrome69
     steps:
+      - attach_workspace:
+          at: ~/
       - run: node cypress/support/reporter.js
 workflows:
   build:
     jobs:
       - cypress/run:
-          no-workspace: true
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
       - release:
