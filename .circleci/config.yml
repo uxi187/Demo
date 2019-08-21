@@ -8,7 +8,7 @@ workflows:
           no-workspace: true
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
-           post-steps:
+          post-steps:
             - run: node cypress/support/reporter.js
             - store_artifacts:
                 path: /root/project/cypress/output
