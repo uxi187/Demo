@@ -1,0 +1,403 @@
+[
+  {
+    "description": "\tI want to verify Login page functionality",
+    "keyword": "Feature",
+    "name": "Login Trainsmart",
+    "line": 2,
+    "id": "login-trainsmart",
+    "tags": [
+      {
+        "name": "@idmngmt",
+        "line": 1
+      }
+    ],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "login-trainsmart;login001-verify-that-user-is-on-login-screen",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login001 Verify that User is on Login screen",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 1401000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "fields Email and Password are visible",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Forgotten password link is visible",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Remember me button is selected by default",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Register Free link is visible",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "links"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login with Facebook"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login with Twitter"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Social login buttons are visible",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;scenario-outline-name:login002-verify-that-email-format-is-ok",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Scenario Outline name:Login002 Verify that email format is ok",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user enter invalid email \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "email validation is triggered",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;scenario-outline-name:login002-verify-that-email-format-is-ok",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Scenario Outline name:Login002 Verify that email format is ok",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user enter invalid email \"200\"",
+            "result": {
+              "status": "passed",
+              "duration": 277000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "email validation is triggered",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;login003-verify-social-login-action-activates-api-to-login",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Login003 Verify Social login action activates API to login",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 351000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user click on link \"Login with Facebook\"",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Facebook API is triggered",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "user click on link \"Login with Twitter\"",
+            "result": {
+              "status": "passed",
+              "duration": 1866000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Twitter API is triggered",
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;login004-login-button-fails-with-invalid-password",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Login004 Login button fails with invalid password",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "user submit login form with invalid password",
+            "result": {
+              "status": "passed",
+              "duration": 727000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "login is unsuccessful with toaster message \"Password incorrect\"",
+            "result": {
+              "status": "passed",
+              "duration": 533000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;login005-login-button-fails-with-unregistered-email",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Login005 Login button fails with unregistered email",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 405000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "user submit login form with invalid username",
+            "result": {
+              "status": "passed",
+              "duration": 690000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "login is unsuccessful with toaster message \"Unknown email. Please register\"",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-trainsmart;login006-login-button-success-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Login006 Login button success with valid credentials",
+        "tags": [
+          {
+            "name": "@idmngmt",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "That user is on Login page",
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "user submit login form with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "user is successfully logged in",
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

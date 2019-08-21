@@ -2,5 +2,5 @@ node_modules
 examples
 screenshots
 videos
-test-results/cucumber-json/*
+test-results/cucumber-json/~
 output/*
