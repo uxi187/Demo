@@ -14,7 +14,7 @@ workflows:
                 path: /root/project/cypress/output
             - store_artifacts:
                 path: /root/project/cypress/test-results/cucumber-json
-                 prefix: tests
+                prefix: tests
             - store_test_results:
                 path: /root/project/cypress/test-results
                 
