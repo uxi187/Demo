@@ -1,6 +1,11 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1.8.0   
+  cypress: cypress-io/cypress@1.8.0  
+jobs:
+  release:
+    executor: cypress/browsers-chrome69
+    steps:
+      - run: node cypress/support/reporter.js
 workflows:
   build:
     jobs:
@@ -8,12 +13,6 @@ workflows:
           no-workspace: true
           executor: cypress/browsers-chrome69
           command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
-          post-steps:
-            - run: node cypress/support/reporter.js
-            - store_artifacts:
-                path: /root/project/cypress/output
-            - store_artifacts:
-                path: /root/project/cypress/test-results/cucumber-json
-            - store_test_results:
-                path: /root/project/cypress/test-results/cucumber-json
-                prefix: test
+      - release:
+          requires:
+            - cypress/run
