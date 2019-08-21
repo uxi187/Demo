@@ -10,6 +10,7 @@ workflows:
           command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
       - cypress/run:
           run: node cypress/support/reporter.js
+      - cypress/run:
             - store_artifacts:
                 path: /root/project/cypress/output
             - store_artifacts:
