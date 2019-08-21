@@ -19,3 +19,4 @@ Feature: Forgotten password Trainsmart
 		And submit forgotten password pop up with "email@example.com"
 		Then user is on confirmation pop up page
 		And confirmation dialog can be closed
+
