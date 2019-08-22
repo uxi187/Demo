@@ -16,4 +16,4 @@ workflows:
             - store_artifacts:
                 path:  /root/project/target/site/serenity/
             - store_test_results:
-                path: test-results
+                path: results
