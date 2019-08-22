@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "cypress": "^3.4.1",
-    "cypress-cucumber-preprocessor": "^1.13.1"
+    "cypress-cucumber-preprocessor": "^1.13.1",
+    "cypress-serenity-reporter": "^1.0.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

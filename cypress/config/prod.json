@@ -3,5 +3,6 @@
     "baseUrl": "https://webapp.prod.trainsmart.com",
     "env": {
         "b": "b"
-    }
+    },
+    "reporter": "cypress-serenity-reporter"
 }
