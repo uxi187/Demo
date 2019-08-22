@@ -4,8 +4,5 @@
     "env": {
         "b": "b"
     },
-    "reporter": "junit",
-    "reporterOptions": {
-      "mochaFile": "test-results/cucumber-json/my-test-output.xml"
-    }
+    "reporter": "cypress-serenity-reporter"
 }
