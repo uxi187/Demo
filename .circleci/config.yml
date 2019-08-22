@@ -34,8 +34,8 @@ jobs:
     - run:
       name: Run Tests
       command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
-        working_directory: ''
-        steps:
+      working_directory: ''
+      steps:
     - run:
       name: Run report
         command: node cypress/support/reporter.js
