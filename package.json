@@ -4,7 +4,9 @@
   "description": "Test automation framework based on Cypress and Cucumber ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run-report": "node cypress/support/reporter.js",
+    "run-tests": "npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod",
+    "test": "npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod && node cypress/support/reporter.js"
   },
   "author": "sukamilan@gmail.com",
   "license": "ISC",
