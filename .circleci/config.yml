@@ -38,8 +38,8 @@ jobs:
       steps:
     - run:
       name: Run report
-        command: node cypress/support/reporter.js
-        when: always
+      command: node cypress/support/reporter.js
+      when: always
     - store_artifacts:
         path: /root/project/cypress/output
     - store_artifacts:
