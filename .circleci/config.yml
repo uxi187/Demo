@@ -32,11 +32,13 @@ jobs:
         - ~/.npm
         - ~/.cache
     - run:
-        command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod
+      name: Run Tests
+        command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod
           --browser chrome
         working_directory: ''
         steps:
     - run:
+      name: Run report
         command: node cypress/support/reporter.js
         when: always
     - store_artifacts:
@@ -44,8 +46,7 @@ jobs:
     - store_artifacts:
         path: /root/project/cypress/test-results/cucumber-json
     - store_test_results:
-        path: /root/project/cypress/test-results/cucumber-json
-        prefix: test
+        path: test-results
 workflows:
   build:
     jobs:
