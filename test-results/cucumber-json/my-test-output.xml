@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.080000000000002" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-08-22T19:14:37" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Forgotten password Trainsmart" timestamp="2019-08-22T19:14:37" tests="3" failures="0" time="14.080000000000002">
+    <testcase name="Forgotten password Trainsmart FP001 Forgotten password link activates forgot pass" time="7.684" classname="FP001 Forgotten password link activates forgot pass">
+    </testcase>
+    <testcase name="Forgotten password Trainsmart FP002 Submiting Forgotten password link activates confirmation dialog" time="4.244" classname="FP002 Submiting Forgotten password link activates confirmation dialog">
+    </testcase>
+    <testcase name="Forgotten password Trainsmart FP003 Closing confirmation Forgotten password dialog redirect user to login page" time="2.152" classname="FP003 Closing confirmation Forgotten password dialog redirect user to login page">
+    </testcase>
+  </testsuite>
+</testsuites>
