@@ -8,6 +8,7 @@ workflows:
           no-workspace: true
           executor: cypress/browsers-chrome69
           command: npm test
+          post-steps:
             - store_artifacts:
                 path: /root/project/cypress/output
             - store_artifacts:
