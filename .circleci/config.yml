@@ -7,7 +7,7 @@ workflows:
       - cypress/run:
           no-workspace: true
           executor: cypress/browsers-chrome69
-          command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod
+          command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --reporter junit --reporter-options "mochaFile=results/my/my-test-output.xml"
           post-steps:
             - store_artifacts:
                 path: /root/project/cypress/output

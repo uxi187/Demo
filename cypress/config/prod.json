@@ -4,5 +4,11 @@
     "env": {
         "b": "b"
     },
-    "reporter": "cypress-serenity-reporter"
+    
+        "reporter": "junit",
+        "reporterOptions": {
+          "mochaFile": "results/my-test-output.xml",
+          "toConsole": true
+        }
+      
 }
