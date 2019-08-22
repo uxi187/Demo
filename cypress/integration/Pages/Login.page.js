@@ -8,7 +8,7 @@ const email_field = '#username'
 const password_field = '#password'
 const remember_me_field = '#remember'
 const login_btn_field = 'Login'
-const forgotten_password_field = 'span.login-link4444'
+const forgotten_password_field = 'span.login-link'
 const register_free_field = 'a.login-link'
 const toaster_message_field = '#toast-container .toast-title'
 

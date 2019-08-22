@@ -14,4 +14,4 @@ workflows:
             - store_artifacts:
                 path: /root/project/cypress/test-results/cucumber-json
             - store_test_results:
-                path: /root/project/target/site/serenity
+                path: /root/project/target/site/serenity/
