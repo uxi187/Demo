@@ -44,8 +44,7 @@ jobs:
     - store_artifacts:
         path: /root/project/cypress/test-results/cucumber-json
     - store_test_results:
-        path: /root/project/cypress/test-results/cucumber-json
-        prefix: test
+        path: test-results
 workflows:
   build:
     jobs:
