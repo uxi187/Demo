@@ -33,8 +33,7 @@ jobs:
         - ~/.cache
     - run:
       name: Run Tests
-        command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod
-          --browser chrome
+      command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
         working_directory: ''
         steps:
     - run:
