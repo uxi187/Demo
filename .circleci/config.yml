@@ -38,7 +38,7 @@ jobs:
         steps:
     - run:
         command: node cypress/support/reporter.js
-		when: always
+        when: always
     - store_artifacts:
         path: /root/project/cypress/output
     - store_artifacts:
