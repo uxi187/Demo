@@ -7,9 +7,8 @@ workflows:
       - cypress/run:
           no-workspace: true
           executor: cypress/browsers-chrome69
-            - run:
-                name: Run tests
-                command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
+          name: Run tests
+          command: npx cypress-tags run -e TAGS='@forgotpass' --env configFile=prod --browser chrome
           post-steps:
             - run:
                 name: Generate report
