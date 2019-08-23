@@ -19,4 +19,4 @@ workflows:
             - store_artifacts:
                 path: test-report
             - store_test_results:
-                path: test-results
+                path: test-results/cucumber-json

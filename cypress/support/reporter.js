@@ -8,10 +8,10 @@ report.generate({
             name: 'Chrome',
             version: '69'
         },
-        device: 'Local test machine',
+        device: 'Circle CI test machine',
         platform: {
-            name: 'ubuntu',
-            version: '16.04'
+            name: 'win',
+            version: '10'
         }
     },
     customData: {
