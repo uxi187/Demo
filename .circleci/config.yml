@@ -32,11 +32,13 @@ jobs:
         - ~/.npm
         - ~/.cache
     - run:
+        name: Run tests
         command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod
           --browser chrome
         working_directory: ''
         steps:
     - run:
+        name: Generate report
         command: node cypress/support/reporter.js
         when: always
     - store_artifacts:
