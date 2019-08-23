@@ -1,5 +1,6 @@
 {
     "chromeWebSecurity": false,
+    "ignoreTestFiles": "*.js",
     "baseUrl": "https://webapp.dev.trainsmart.com",
     "env": {
         "url": ""
