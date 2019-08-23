@@ -3,6 +3,7 @@ const report = require('multiple-cucumber-html-reporter');
 report.generate({
     jsonDir: './test-results/cucumber-json/',
     reportPath: './test-report/',
+    durationInMS: true,
     metadata: {
         browser: {
             name: 'Chrome',
@@ -10,7 +11,7 @@ report.generate({
         },
         device: 'Circle CI test machine',
         platform: {
-            name: 'win',
+            name: 'windows',
             version: '10'
         }
     },
