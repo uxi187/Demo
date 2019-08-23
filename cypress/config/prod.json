@@ -3,12 +3,5 @@
     "baseUrl": "https://webapp.prod.trainsmart.com",
     "env": {
         "b": "b"
-    },
-    
-        "reporter": "junit",
-        "reporterOptions": {
-          "mochaFile": "results/my/my-test-output.xml",
-          "toConsole": true
-        }
-      
+    } 
 }

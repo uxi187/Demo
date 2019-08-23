@@ -33,7 +33,7 @@ jobs:
         - ~/.cache
     - run:
         name: Run tests
-        command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod
+        command: npx cypress-tags run -e TAGS='@idmngmt' --env configFile=prod
           --browser chrome
         working_directory: ''
         steps:
@@ -42,9 +42,7 @@ jobs:
         command: node cypress/support/reporter.js
         when: always
     - store_artifacts:
-        path: /root/project/cypress/output
-    - store_artifacts:
-        path: /root/project/cypress/test-results/cucumber-json
+        path: /root/project/cypress/test-report
     - store_test_results:
         path: test-results
 workflows:
