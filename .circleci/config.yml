@@ -15,8 +15,8 @@ workflows:
                 command: node cypress/support/reporter.js
                 when: always
             - store_artifacts:
-                path: cypress/test-results
+                path: test-results
             - store_artifacts:
                 path: /root/project/cypress/test-report
             - store_test_results:
-                path: cypress/test-results
+                path: test-results
