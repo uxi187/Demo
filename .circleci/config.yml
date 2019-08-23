@@ -17,6 +17,6 @@ workflows:
             - store_artifacts:
                 path: test-results
             - store_artifacts:
-                path: /root/project/cypress/test-report
+                path: test-report
             - store_test_results:
                 path: test-results
