@@ -7,15 +7,15 @@ workflows:
       - cypress/run:
           no-workspace: true
           executor: cypress/browsers-chrome69
-          name: Run tests
-          command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
+            name: Run tests
+            command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
           post-steps:
             - run:
                 name: Generate report
                 command: node cypress/support/reporter.js
                 when: always
             - store_artifacts:
-                path: test-results
+                path: cypress/test-results
             - store_artifacts:
                 path: /root/project/cypress/test-report
             - store_test_results:
