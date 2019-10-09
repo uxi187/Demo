@@ -6,7 +6,7 @@ jobs:
       - slack/notify:
           color: '#42e2f4'
           message: This is a custom message notification
-          webhook: $SLACK_WEBHOOK
+          webhook: 'https://hooks.slack.com/services/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'
 orbs:
   slack: circleci/slack@3.3.0
 version: 2.1
