@@ -1,22 +1,16 @@
-version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1.8.0   
-workflows:
+jobs:
   build:
+    docker:
+      - image: cypress/browsers:chrome69
+    steps:
+      - slack/notify:
+          color: '#42e2f4'
+          message: This is a custom message notification
+          webhook: https://hooks.slack.com/services/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
+orbs:
+  slack: circleci/slack@3.3.0
+version: 2.1
+workflows:
+  your-workflow:
     jobs:
-      - cypress/run:
-          no-workspace: true
-          name: Run tests
-          executor: cypress/browsers-chrome69
-          command: npx cypress-tags run -e TAGS='@aw' --env configFile=prod --browser chrome
-          post-steps:
-            - run:
-                name: Generate report
-                command: node cypress/support/reporter.js
-                when: always
-            - store_artifacts:
-                path: test-results
-            - store_artifacts:
-                path: test-report
-            - store_test_results:
-                path: test-results/cucumber-json
+      - build
