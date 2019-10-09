@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-10-09T18:15:43.069Z",
+    "end": "2019-10-09T18:16:14.931Z",
+    "duration": 31862,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "454208a7-4fb9-4df7-8f88-1b6618376862",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+          "title": "Navigation Trainsmart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "NAV001 Header top line navigation (example #1)",
+              "fullTitle": "Navigation Trainsmart NAV001 Header top line navigation (example #1)",
+              "timedOut": null,
+              "duration": 4964,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4c17163d-85bc-448c-9af1-247ba935a1b3",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV001 Header top line navigation (example #2)",
+              "fullTitle": "Navigation Trainsmart NAV001 Header top line navigation (example #2)",
+              "timedOut": null,
+              "duration": 1996,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "00b64a0a-2088-4c58-a0a6-84d966c50605",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV002 Global application navigation",
+              "fullTitle": "Navigation Trainsmart NAV002 Global application navigation",
+              "timedOut": null,
+              "duration": 16484,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "211e8fa1-8e91-4241-8cfe-f565774d5339",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV003 Footer navigation (example #1)",
+              "fullTitle": "Navigation Trainsmart NAV003 Footer navigation (example #1)",
+              "timedOut": null,
+              "duration": 2573,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4713ca7e-be01-4673-8928-01214d0acd32",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV003 Footer navigation (example #2)",
+              "fullTitle": "Navigation Trainsmart NAV003 Footer navigation (example #2)",
+              "timedOut": null,
+              "duration": 1882,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "1800f1f1-388f-4016-bf47-77a479a0cf90",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV003 Footer navigation (example #3)",
+              "fullTitle": "Navigation Trainsmart NAV003 Footer navigation (example #3)",
+              "timedOut": null,
+              "duration": 1743,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "617b217a-1155-4095-8ff7-8c5c27f819c0",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "NAV004 Footer Logo navigation",
+              "fullTitle": "Navigation Trainsmart NAV004 Footer Logo navigation",
+              "timedOut": null,
+              "duration": 1743,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "184f4aab-31ee-4b72-8002-fc3a2abfe7f9",
+              "parentUUID": "3c7247a0-b4ab-4ac2-b2f0-a32795652106",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c17163d-85bc-448c-9af1-247ba935a1b3",
+            "00b64a0a-2088-4c58-a0a6-84d966c50605",
+            "211e8fa1-8e91-4241-8cfe-f565774d5339",
+            "4713ca7e-be01-4673-8928-01214d0acd32",
+            "1800f1f1-388f-4016-bf47-77a479a0cf90",
+            "617b217a-1155-4095-8ff7-8c5c27f819c0",
+            "184f4aab-31ee-4b72-8002-fc3a2abfe7f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 31385,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mocha_reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

@@ -3,6 +3,11 @@
     "ignoreTestFiles": "*.js",
     "baseUrl": "https://webapp.prod.trainsmart.com",
     "env": {
-        "b": "b"
-    } 
+        "user-session": "https://app.prod.trainsmart.com"
+    },
+    "reporter": "mocha-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporterOpts.json"
+    },
+    "video": false
 }

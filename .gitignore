@@ -2,4 +2,7 @@ node_modules
 examples
 screenshots
 videos
-target
+test-results
+test-report
+mocha_reports
+mochawesomereport
