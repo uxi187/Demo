@@ -26,7 +26,7 @@ jobs:
         name: Running cypress tests on dev environment...
         command: npm run spec_test:suka
      - run:
-        name: Generating BDD report...
+        name: Generating BDD report.
         command: npm run report
         when: always
      - run:
