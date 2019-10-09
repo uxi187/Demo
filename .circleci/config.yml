@@ -5,6 +5,7 @@ jobs:
     steps:
       - slack/notify:
           color: '#42e2f4'
+          include_job_number_field: false
           message: This is a custom message notification
           webhook: $SLACK_WEBHOOK
 orbs:
