@@ -51,12 +51,12 @@ jobs:
       - image: cypress/browsers:chrome69
     steps:
       - slack/notify:
-          color: '#42e2f4'
+          color: '#42e2a4'
           include_job_number_field: false
           message: This is a custom message notification
           webhook: $SLACK_WEBHOOK
 orbs:
-  slack: circleci/slack@3.3.0
+  slack: circleci/slack@3.3.0 
 version: 2.1
 workflows:
   your-workflow:
