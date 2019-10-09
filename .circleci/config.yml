@@ -1,4 +1,51 @@
 jobs:
+  run_cypress_coach_tests_dev:
+    working_directory: ~/project
+    docker:
+     - image: cypress/browsers:chrome69
+    parallelism: 1
+    steps:
+     - checkout
+     - restore_cache:
+        keys:
+        - cache-{{ arch }}-{{ .Branch }}-{{ checksum "package.json" }}
+     - run:
+        name: Install dependencies
+        command: npm ci
+     - run:
+        name: Verify Cypress
+        command: npx cypress verify
+     - save_cache:
+        key: cache-{{ arch }}-{{ .Branch }}-{{ checksum "package.json" }}
+        paths:
+        - ~/.npm
+     - run:
+        name: Cleaning up old reports...
+        command: npm run cleanup
+     - run:
+        name: Running cypress tests on dev environment...
+        command: npm run spec_test:suka
+     - run:
+        name: Generating BDD report...
+        command: npm run report
+        when: always
+     - run:
+        name: Generating MochaAwesome report...
+        command: npm run merge_reports && npm run generate_mochawesome_report
+        when: always
+     - store_artifacts:
+        path: ~/project/test-report
+     - store_artifacts:
+        path: ~/project/cypress/screenshots
+     - store_artifacts:
+        path: ~/project/mochawesomereport
+     - store_test_results:
+        path: ~/project/mochawesomereport
+        prefix: test
+     - run:
+        name: Posting slack message...
+        command: export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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" && npx cypress-slack-reporter --report-dir mochawesomereport --verbose
+        when: always
   build:
     docker:
       - image: cypress/browsers:chrome69
@@ -15,3 +62,4 @@ workflows:
   your-workflow:
     jobs:
       - build
+      - run_cypress_dev
