@@ -62,4 +62,4 @@ workflows:
   your-workflow:
     jobs:
       - build
-      - run_cypress_dev
+      - run_cypress_coach_tests_dev
