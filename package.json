@@ -4,8 +4,10 @@
   "description": "Test automation framework based on Cypress and Cucumber ",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -fr test-report && rm -fr test-results",
+    "cleanup": "rm -fr test-report && rm -fr test-results && rm -fr cypress/mocha_reports && rm -fr mochawesomereport",
     "report": "node cypress/support/reporter.js",
+    "merge_reports": "mkdir mochawesomereport && mochawesome-merge --reportDir cypress/mocha_reports/mocha > mochawesomereport/mergedreport.json",
+    "generate_mochawesome_report": "marge mochawesomereport/mergedreport.json -o mochawesomereport",
     "spec_test": "cypress-tags run --env configFile=dev --browser chrome -e",
     "spec_test:suka": "npm run spec_test -- TAGS=@nav",
     "spec_test:aw": "npm run spec_test -- TAGS=@aw"

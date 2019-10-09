@@ -53,7 +53,7 @@ jobs:
       - slack/notify:
           color: '#42e2a4'
           include_job_number_field: false
-          message: This is a custom message notification
+          message: Custom message
           webhook: $SLACK_WEBHOOK
 orbs:
   slack: circleci/slack@3.3.0 
