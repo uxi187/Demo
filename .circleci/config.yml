@@ -44,7 +44,7 @@ jobs:
         prefix: test
      - run:
         name: Posting slack message...
-        command: export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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" && npx cypress-slack-reporter --report-dir mochawesomereport --verbose
+        command: export SLACK_WEBHOOK_URL=$SLACK_WEBHOOK && npx cypress-slack-reporter --report-dir mochawesomereport --verbose
         when: always
   build:
     docker:
