@@ -33,7 +33,7 @@
             "name": "User is on Home page",
             "result": {
               "status": "passed",
-              "duration": 3444000000
+              "duration": 5651000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "user open header link \"https://trainsmartjira.atlassian.net/servicedesk/customer/portal/1\" by navigating to external button link \"Support\"",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 177000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "external link \"Support\" with \"Service Desk\" is open from header",
             "result": {
               "status": "passed",
-              "duration": 1651000000
+              "duration": 2396000000
             }
           }
         ]
@@ -78,7 +78,7 @@
             "name": "User is on Home page",
             "result": {
               "status": "passed",
-              "duration": 605000000
+              "duration": 1205000000
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "user open header link \"https://www.trainsmart.com/collections/online-coaching/products/1-month\" by navigating to external button link \"Shop\"",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 27000000
             }
           },
           {
@@ -98,360 +98,7 @@
             "name": "external link \"Shop\" with \"1 Month\" is open from header",
             "result": {
               "status": "passed",
-              "duration": 1435000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "navigation-trainsmart;nav002-global-application-navigation",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "NAV002 Global application navigation",
-        "tags": [
-          {
-            "name": "@nav",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "User is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 584000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "button",
-                      "link"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Client Name",
-                      "/profile"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Coach",
-                      "/coach"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Add a Workout",
-                      "/workout/manual"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Trainsmart Logo",
-                      "/home"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "My Training",
-                      "/training"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "My Goals",
-                      "/goals/fitness"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "My Profile",
-                      "/profile"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Physical Details",
-                      "/physical-detail/health-screen"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Messages",
-                      "/message/last"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Contacts",
-                      "/contacts/friends"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Settings",
-                      "/setting/personal-info"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Home",
-                      "/home"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Logout",
-                      "/login"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "navigating to link redirect user to page",
-            "result": {
-              "status": "passed",
-              "duration": 8291000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 34,
-            "name": "Coach user is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 5222000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "button",
-                      "link"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Coach",
-                      "/dashboard/groups"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "navigating to link redirect user to page",
-            "result": {
-              "status": "passed",
-              "duration": 2453000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "navigation-trainsmart;nav003-footer-navigation",
-        "keyword": "Scenario",
-        "line": 48,
-        "name": "NAV003 Footer navigation",
-        "tags": [
-          {
-            "name": "@nav",
-            "line": 1
-          },
-          {
-            "name": "@1",
-            "line": 40
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 42,
-            "name": "User is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 1488000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 43,
-            "name": "user open footer link \"https://www.trainsmart.com/legal-stuff/privacy-policy/\" by navigating to external button link \"Privacy Policy\"",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "external link \"Privacy Policy\" with \"pages/privacy-policy\" is open from footer",
-            "result": {
-              "status": "passed",
-              "duration": 1131000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "navigation-trainsmart;nav003-footer-navigation",
-        "keyword": "Scenario",
-        "line": 49,
-        "name": "NAV003 Footer navigation",
-        "tags": [
-          {
-            "name": "@nav",
-            "line": 1
-          },
-          {
-            "name": "@1",
-            "line": 40
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 42,
-            "name": "User is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 467000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 43,
-            "name": "user open footer link \"https://www.trainsmart.com/legal-stuff/website-terms-of-use/\" by navigating to external button link \"Terms of Use\"",
-            "result": {
-              "status": "passed",
-              "duration": 14000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "external link \"Terms of Use\" with \"pages/website-terms-of-use\" is open from footer",
-            "result": {
-              "status": "passed",
-              "duration": 1457000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "navigation-trainsmart;nav003-footer-navigation",
-        "keyword": "Scenario",
-        "line": 50,
-        "name": "NAV003 Footer navigation",
-        "tags": [
-          {
-            "name": "@nav",
-            "line": 1
-          },
-          {
-            "name": "@1",
-            "line": 40
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 42,
-            "name": "User is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 431000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 43,
-            "name": "user open footer link \"https://trainsmartjira.atlassian.net/servicedesk/customer/portal/1\" by navigating to external button link \"Support\"",
-            "result": {
-              "status": "passed",
-              "duration": 15000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 44,
-            "name": "external link \"Support\" with \"servicedesk/customer/portal/1\" is open from footer",
-            "result": {
-              "status": "passed",
-              "duration": 1351000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "navigation-trainsmart;nav004-footer-logo-navigation",
-        "keyword": "Scenario",
-        "line": 53,
-        "name": "NAV004 Footer Logo navigation",
-        "tags": [
-          {
-            "name": "@nav",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 54,
-            "name": "User is on Home page",
-            "result": {
-              "status": "passed",
-              "duration": 419000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "user open footer logo link \"http://www.trainsmart.com\"",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 56,
-            "name": "external link \"www.trainsmart.com\" is open",
-            "result": {
-              "status": "passed",
-              "duration": 1360000000
+              "duration": 2822000000
             }
           }
         ]
